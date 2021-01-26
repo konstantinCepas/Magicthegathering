@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic the Gathering</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header id="header">
+    </header>
+
+    <form  class="userForm" name="userForm" id="formId" method="dialog">
+        Welcome Summoner <br>
+        Name: <input type="text" id="user" name="username" placeholder="Enter your name" required minlength="3">
+        <span id="errorMsg"class="checkErr"></span>
+        <input type="button" id="userSubmit" value="Submit">
+    </form>
+       <ul class="hide-drop" id="filterslist">
+           <li class="search-field">
+        <input type="search" id="search-bar">
+        <input type="button" value="Search" id="search-button">
+    </li>
+        <li class="drop-down" id="drop-down">
+            Filter Menu
+           </li>
+       </ul>
+    <ul id="card-list" class="hide-drop">
+        <th>Type</th>
+        <ul class="hide-drop" id="type-list">
+            <li><input type="checkbox" name="Artifact" id="type" class="type" >Artifact</li>
+            <li><input type="checkbox" name="Creature" id="type" class="type">Creature</li>  
+            <li><input type="checkbox" name="Autobot" id="type"class="type">Autobot</li>  
+            <li><input type="checkbox" name="Card" id="type"class="type">Card</li>  
+            <li><input type="checkbox" name="Character" id="type"class="type">Character</li>    
+            <li><input type="checkbox" name="Conspiracy" id="type"class="type">Conspiracy</li>  
+            <li><input type="checkbox" name="Creature" id="type"class="type">Creature</li>  
+            <li><input type="checkbox" name="Dragon" id="type"class="type">Dragon</li>
+            <li><input type="checkbox" name="Elemental" id="type"class="type">Elemental</li>
+            <li><input type="checkbox" name="Enchantment" id="type"class="type">Enchantment</li>
+            <li><input type="checkbox" name="Goblin" id="type"class="type">Goblin</li>
+            <li><input type="checkbox" name="Hero" id="type"class="type">Hero</li>
+            <li><input type="checkbox" name="instant" id="type"class="type">instant</li>
+            <li><input type="checkbox" name="Jaguar" id="type"class="type">Jaguar</li>
+            <li><input type="checkbox" name="Knights" id="type"class="type">Knights</li>
+            <li><input type="checkbox" name="Land" id="type"class="type">Land</li>
+            <li><input type="checkbox" name="Phenomenon" id="type"class="type">Phenomenon</li>
+            <li><input type="checkbox" name="Planeswalker" id="type"class="type">Planeswalker</li>
+            <li><input type="checkbox" name="Scheme" id="type"class="type">Scheme</li>
+            <li><input type="checkbox" name="Sorcery" id="type"class="type">Sorcery</li>
+            <li><input type="checkbox" name="Specter" id="type"class="type">Specter</li>
+            <li><input type="checkbox" name="Summon" id="type"class="type">Summon</li>
+            <li><input type="checkbox" name="Tribal" id="type"class="type">Tribal</li>
+            <li><input type="checkbox" name="Vanguard" id="type"class="type">Vanguard</li>
+            <li><input type="checkbox" name="Wolf" id="type"class="type">Wolf</li>
+        </ul>
+        <th>Colors</th>
+        <ul class="hide-drop" id="colorlist">
+            <li><input type="checkbox" name="White" id="type"class="color">White</li>
+            <li><input type="checkbox" name="Blue" id="type"class="color">Blue</li>
+            <li><input type="checkbox" name="Black" id="type"class="color">Black</li>
+            <li><input type="checkbox" name="Red" id="type"class="color">Red</li>
+            <li><input type="checkbox" name="Green" id="type"class="color">Green</li>
+        </ul>
+         <li><input type="button" value="Filter" id="type-submit"></li>
+       
+       
+ 
+
+    </ul>
+
+    <ul class="hide-drop" id="cardTable">
+
+    </ul>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

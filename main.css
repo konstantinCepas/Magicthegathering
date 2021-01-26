@@ -1,0 +1,193 @@
+html { 
+    background: url(Pictures/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+/* header {
+    display: flex;
+    flex-direction: row;
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0px auto;
+    height: auto;
+    margin-top: 15%;
+    align-items: center;
+
+}
+
+
+.error {
+    background-color: red;
+    color: white;
+}
+
+input:invalid {
+    border: solid red;
+}
+input:valid {
+    border:solid green;
+}
+form.userForm {
+display: flex;
+flex-direction: column; 
+width: 10%;
+font-family: fantasy;
+color: white;
+font-size: x-large;
+}
+span.checkErr {
+    display: none;
+}
+span.checkErr1 {
+    background-color: green;
+    color: white;
+    text-align: center;
+
+}
+span.checkErr2 {
+    background-color: red;
+    color: white;
+    text-align: center;
+
+}
+
+.hide-form {
+    display: hidden;
+    opacity: 0;
+}
+
+.cards {
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    list-style-type: none;
+    color: white;
+    font-family: fantasy;
+    font-size: large;
+    margin-top: 0px;
+    border: solid black;
+    margin-bottom: 0px;
+}
+
+.drop-down {
+    background-color: black;
+    color: white;
+    font-family: fantasy;
+    width: 50px;
+    justify-content: center;
+    display: flex;
+    font-size: large;
+    width: 110px;
+    
+} 
+
+.cardTable {
+    height: auto;
+    width: 100%;
+    background-color: dimgray;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    font-family: fantasy;
+    border: solid black;
+    margin-top: 0px;
+}
+
+.cardDiv {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 350px;
+    margin-bottom: 75px;
+}
+
+.cardDiv img {
+    height: 300px;
+}
+
+
+.type-list {
+    height: 200px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.color-list {
+    width: 50%;
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+.color-list li {
+    width: 100%;
+}
+
+#type-submit {
+    background-color: green;
+    color: white;
+    width: 101px;
+}
+
+.filters {
+    width: 100%;
+    background-color: orange;
+    border: solid black;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-bottom: 0px;
+}
+
+
+#search-button {
+    background-color: green;
+    color: white;
+}
+
+.cardDiv:hover span {
+    color: white;
+}
+
+
+li.drop-down:hover{
+    color: gray;
+}
+
+
+
+.hide-drop {
+    display: none;
+}
+
+.btnFilter {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    height: 50px;
+}
+
+.page-loader {
+    background: url(Pictures/loader.gif) no-repeat center center fixed;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    top: 0px;
+}
+
+#header {
+    font-family: fantasy;
+    color: white;
+    font-size: 50px;
+}
